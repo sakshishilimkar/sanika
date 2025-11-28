@@ -1,1 +1,14 @@
 sakshi shilimkar
+echo "Initial content" > newfile.txt
+
+echo "# Initial commit" > README.md
+git add README.md
+git commit -m "Initial commit"
+git add newfile.txt
+git commit -m "Add newfile.txt"
+git checkout -b feature-branch
+echo "Some updated content" >> newfile.txt
+git add newfile.txt
+git commit -m "Update newfile.txt in feature branch"
+git push -u origin feature-branch
+git checkout main
