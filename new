@@ -12,3 +12,5 @@ git add newfile.txt
 git commit -m "Update newfile.txt in feature branch"
 git push -u origin feature-branch
 git checkout main
+git checkout main
+git pull origin main
